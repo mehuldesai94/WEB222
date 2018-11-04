@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web Tutorial</title>
+        <link rel="stylesheet" href="css/theme.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'/>
+        <script src="js/login.js"></script>
+    </head>
+
+    <body>
+        <!--HTML Page Hader -->
+        
+        <header>
+            <div class="center">
+                    <!--<img src="img/logo.png" id="logo"/>-->
+                    <h1 class="app-title">:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web Tutorials&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;:&nbsp;</h1>
+            </div>
+        </header>
+
+        
+
+        <!--Page Navigation Section -->
+        <nav>
+            <div class="left">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+                    <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+                    <li><a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a></li>
+                    <li><a href="https://www.w3schools.com/jquery/default.asp">JQUERY</a></li>
+                    <li><a href="https://www.w3schools.com/sql/default.asp">SQL</a></li>
+                    <li><a href="https://www.w3schools.com/php/default.asp">PHP</a></li>
+                    <li><a href="https://www.w3schools.com/bootstrap/default.asp">BOOTSTRAP</a></li>
+                    <li><a href="index.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    
+        <section>
+            <div class="main-center">
+                    <form name="signup" action="https://httpbin.org/post" method="post" onsubmit="return validateForm()">
+
+
+                   <fieldset name="userInfo">
+                        <legend>Persona Information: </legend>
+                        <div class="userDetails">
+                            <input type="hidden" name="lastName" id="lastName" value="Desai" />
+                            <input type="hidden" name="studentId" id="studentId" value="110288172" />
+                        </div>
+                        <div class="userDetails">
+                            <label>First Name:</label> 
+                            <input type="text" name="txtFirstName" id="txtFirstName" required/>
+                        </div>
+                
+                        <div class="userDetails">
+                            <label>Last Name:</label> 
+                            <input type="text" name="txtLastName" id="txtLastName" required/>
+                        </div>
+                        
+                        <div class="userDetails">
+                            <label>Phone Number:</label>
+                            <input type="tel" name="txtPhone" id="txtPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Should be 111-111-1111 format" required/>
+                        </div>
+                        
+                        <div class="userDetails">
+                            <label>Email Address: </label>
+                            <input type="email" name="txtEmail" id="txtEmail" required/>
+                         </div>
+                   </fieldset>
+                   
+                   <fieldset>
+                        <legend>Address Information: </legend>
+                        <div class="userDetails">
+                            <label>Unit Number:</label>
+                            <input type="number" name="txtUnitNumber" id="txtUnitNumber" required/>
+                        </div>
+                     
+                        <div class="userDetails">
+                            <label>Street Number:</label>
+                            <input type="number" name="txtStreetNumber" id="txtStreetNumber" required/>
+                        </div>
+                     
+                        <div class="userDetails">
+                            <label>Street Name:</label>
+                            <input type="text" name="txtStreeName" id="txtStreeName" pattern="[A-Za-z ]*" title="Characters only" required/>
+                        </div>
+                       
+                        <div class="userDetails">
+                            <label>City:</label>
+                            <input type="text" name="txtCity" id="txtCity" pattern="[A-Za-z ]*" title="Characters only" required/>
+                        </div>
+                       
+                        <div class="userDetails">
+                            <label>Province:</label>
+                            <!--<input type="text" name="txtProvince" id="txtProvince" required/>-->
+                            <select style="width:150px;">
+                                <option value="Ontario" selected>Ontario</option>
+                                <option value="Quebec">Quebec</option>
+                                <option value="British Columbia">British Columbia</option>
+                                <option value="Alberta">Alberta</option>
+                                <option value="Manitoba">Manitoba</option>
+                                <option value="Saskatchewan">Saskatchewan</option>
+                              </select>
+                        </div>
+                      
+                        <div class="userDetails">
+                            <label>Postal Code:</label>
+                            <input type="text" name="txtPostalCode" id="txtPostalCode" pattern="[a-zA-z][0-9][a-zA-z][0-9][a-zA-z][0-9]" title="Should be M3J1V6 format" required/>
+                        </div>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Login Information: </legend>
+                    <div class="userDetails">
+                        <label>User Name:</label> 
+                        <input type="text" name="txtUserName" id="txtUserName" required onkeydown="clearUserNameError()"/>
+                        <span id="usernameError" class="error"/>
+                    </div>
+                    
+                    <div class="userDetails">
+                       
+                            <label>Password: </label>
+                            <input type="password" name="txtPassword" id="txtPassword" required onkeydown="clearPasswordError()"/>
+                            <span id="passwordError" class="error"/>
+                       
+                    </div>
+                     
+                    <div class="userDetails">
+                        <label>Confirm Password:</label> 
+                         <input type="password" name="txtConPassword" id="txtConPassword" required onkeydown="clearConPasswordError()"/>
+                         <span id="conPasswordError" class="error"/>
+                       </div>
+                </fieldset>
+
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear" onclick="onClearClick()">
+               </form>
+            </div>
+        </section>
+       
+        <!--Page right side section -->
+        <aside>
+            <div class="right">
+                <img src="img/mehul.jpg" alt="Avatar"> 
+
+                <table class="main-table-top">
+                        <tbody>
+                            <tr>
+                                <td colspan="2"><span> Developer Details: </span></td>
+                            </tr>  
+                        </tbody>
+                    </table>
+                    <div class="main-table-container">
+                        <table class="main-table">
+                            <tbody id="main-table-body">
+                                <tr>
+                                    <td><span>Name: </span></td>
+                                    <td>Mehulkumar Desai</td>
+                                </tr>
+                                <tr>
+                                    <td><span> Student Id: </span></td>
+                                    <td>110288172</td>
+                                </tr>    
+                                <tr>
+                                    <td><span> Programme: </span> </td>
+                                    <td>CPD</td>
+                                </tr>
+                                <tr>
+                                    <td><span>College: </span></td>
+                                    <td>Seneca</td>
+                                </tr>    
+                                <tr>
+                                    <td><span> Campus:</span> </td>
+                                    <td>York Campus</td>
+                                </tr>                    
+                            </tbody>
+                        </table>
+                    </div>
+            </div>
+        </aside>
+
+
+        <!-- page footor -->
+        <footer>
+                <div class="center">
+                        &copy; 2017 Mehulkumar Desai
+                </div>
+        </footer>
+    </body>
+</html>

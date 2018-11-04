@@ -1,0 +1,109 @@
+img {
+    padding: 20px;
+    border-radius: 50%;
+    width: 200px;
+    margin: auto;
+    display: block;
+  }
+
+  
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #410d0d;/*#960b0b;*/
+  background-color: #dddddd;
+}
+
+nav, footer {
+  background-color: #c30933;
+  border: 1px solid #e35064;
+}
+
+header{
+  color: #0000FF;
+  font-style: italic;
+  font-size: 13px;
+  text-align: center;
+  margin: -3px;
+}
+
+.app-title{
+  font-family: 'Fredericka the Great', cursive;
+  opacity: 0.9;    
+  letter-spacing: 4px;
+  text-shadow: 3px 2px #e35064;
+}
+
+
+.main-center, .right
+{
+    height: 410px;
+    overflow-y: auto;
+    background: #888888;
+    margin-top: 2px;
+    padding: 25px;
+    margin: 0px;
+}
+
+.main-table-container
+{
+    overflow-y: auto;
+    background: #888888;
+    margin-top: 2px;
+}
+
+
+th
+{
+    padding: 2px;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    background: #888888;
+}
+
+td
+{
+    color: #960b0b;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px; 
+}
+
+span, p
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+	font-size: 15px;
+    font-style: italic;
+}
+
+.userDetails
+{
+    padding-top: 15px;
+}
+
+fieldset{
+    padding: 10px; 
+}
+
+label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 125px;
+    text-align: left;
+}
+
+form {
+    /* Just to center the form on the page */
+    margin: 0 auto;
+    width: 550px;
+    /* To see the outline of the form */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+}
+
+.error
+{
+    color: red;
+}
