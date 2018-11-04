@@ -1,0 +1,81 @@
+/* Place all of your CSS Code in this file */
+
+/********************************************************************************* 
+*
+* WEB222 – Assignment #4a
+*
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Mehulkumar Desai        Student ID: 110288172        Date: 9th-March-2018 
+* 
+********************************************************************************/
+
+body{
+    color: #960b0b;
+    background-color: #dddddd;
+}
+
+nav, footer {
+    background-color: #c30933;
+    border: 1px solid #e35064;
+}
+
+header{
+    color: #0000FF;
+    font-style: italic;
+    font-size: 13px;
+    text-align: center;
+    margin: -3px;
+}
+
+.app-title{
+    font-family: 'Fredericka the Great', cursive;
+    opacity: 0.9;    
+    letter-spacing: 4px;
+    text-shadow: 3px 2px #e35064;
+}
+
+.main-table-container
+{
+    height: 410px;
+    overflow-y: auto;
+    background: #888888;
+    margin-top: 2px;
+}
+
+
+th
+{
+    padding: 10px;
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    background: #888888;
+    border: 1px solid #222222;
+}
+
+td
+{
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px; 
+    border: 1px solid #222222; 
+}
+
+span
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+	font-size: 15px;
+    font-style: italic;
+}
+
+h4
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 16px;
+}

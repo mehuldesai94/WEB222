@@ -1,0 +1,139 @@
+/********************************************************************************* 
+* 
+* WEB222 – Assignment #4b 
+* 
+* I declare that this assignment is my own work in accordance with Seneca 
+* Academic Policy. No part of this assignment has been copied manually or 
+* electronically from any other source (including web sites) or distributed to 
+* other students. 
+* 
+* Name: Mehulkumar Desai        Student ID: 110288172        Date: 13th-March-2018 
+* 
+********************************************************************************/
+
+
+/* Select all <container> elements that are a child of an element with class “main-container” 
+and set maximum witdh to 960px and set top/bottom margin 0px and legt/right margin auto */
+.main-container
+{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+/* Select all <nav> elements that are a child of an element with class “main-container” 
+and set width to 30% and set left side in page using float property*/
+.main-container nav
+{
+    width: 30%;
+    float: left;
+}
+
+/* Select all <main> elements that are a child of an element with class “main-container” 
+and set width to 70% and set right side in page using float property*/
+.main-container .main
+{
+    width: 70%;
+    float: right;
+}
+
+/* Select all <header> elements that are a child of an element with class “main-container” 
+and set padding to 10px, background color #eeeeee, border bottom solid with color #CCCCCC, and margin from bottom is 30px*/
+.main-container header 
+{
+    padding: 10px;
+    background-color: #EEEEEE;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 30px;
+}
+
+/* Select all <h1> elements that are a child of an element with class “header” and that are a child of an element with class “main-container 
+and set width to 70%, font size 24px, and float/text-align right side*/
+.main-container header h1 
+{
+    width: 70%;
+    font-size: 24px;
+    float: right;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Select all <footer> elements that are a child of an element with class "main-container”
+and clear floating, set padding top/bottom 20px left/right 10px, backgroud color #EEEEEE, top-border 1px solid with #CCCCCC, and set font-size 13*/
+.main-container footer 
+{
+    clear: both;
+    padding: 20px 10px;
+    background-color: #EEEEEE;
+    border-top: 1px solid #CCCCCC;
+    font-size: 13px;
+}
+
+/*Select <id="logo"> element and set width to 30%, font-size to 25px, weight to bold*/
+#logo
+{
+    width: 30%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Select all <img> elements that are a child of an element with id "logo”
+and set width to 94px, and set vertical align*/
+#logo img
+{
+    width: 94px;
+    vertical-align: middle;
+}
+
+/*select all <ul> elements that are a child of an element with div "nav
+and set style to none*/
+nav ul
+{
+    list-style-type: none;
+}
+
+/*select all <a> elements that are a child of an element with "ul" and that is child of <nav> tag
+and set decoration to none, padding 5px, and disply block level*/
+nav ul a
+{
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+} 
+
+/*select all <province> class that are a in of "div" tag
+and set width 30%, float left, margin 8px, and hight 310px*/
+div.province
+{
+    width: 30%;
+    float: left;
+    margin: 8px;
+    height: 310px;
+}
+
+/*select all <province> class that are a in of "div" tag, and <description> class
+and set max-width 165px, overflow-y 165px, overflow-x auto, and margin to 8px*/
+div.province .description
+{
+    max-height: 165px;
+    /*overflow-y: 165px;*/
+    overflow-x: auto;
+    margin: 8px 0px;
+}
+
+/*select all <province> class that are a in "div" tag, and <a> tag
+and set display to block, align center, background color is #555555, color #EEEEEE, decoration none, and padding 5px;*/
+div.province a 
+{
+    display: block;
+    text-align: center;
+    background-color: #555555;
+    color: #EEEEEE;
+    text-decoration: none;
+    padding: 5px;
+}
+
+img.flag
+{
+    width: 100%;
+}
